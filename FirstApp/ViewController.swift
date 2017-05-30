@@ -9,7 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var input: UITextField!
+    
+    @IBAction func submit(_ sender: UIButton) {
+        if input.text != "" {
+            performSegue(withIdentifier: "pass", sender: self)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondController = segue.destination as! SecondViewController
+        
+        secondController.myString = "Bem vindo, " + input.text!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

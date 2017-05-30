@@ -14,6 +14,7 @@
 		0F00DC731EC4944A0075FBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F00DC711EC4944A0075FBF8 /* LaunchScreen.storyboard */; };
 		0F00DC7E1EC4944A0075FBF8 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00DC7D1EC4944A0075FBF8 /* FirstAppTests.swift */; };
 		0F00DC891EC4944A0075FBF8 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00DC881EC4944A0075FBF8 /* FirstAppUITests.swift */; };
+		0FAADDC11EDDE74600BF683E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAADDC01EDDE74600BF683E /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0F00DC841EC4944A0075FBF8 /* FirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F00DC881EC4944A0075FBF8 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		0F00DC8A1EC4944A0075FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FAADDC01EDDE74600BF683E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				0F00DC6A1EC4944A0075FBF8 /* ViewController.swift */,
 				0F00DC6C1EC4944A0075FBF8 /* Main.storyboard */,
 				0F00DC6F1EC4944A0075FBF8 /* Assets.xcassets */,
+				0FAADDC01EDDE74600BF683E /* SecondViewController.swift */,
 				0F00DC711EC4944A0075FBF8 /* LaunchScreen.storyboard */,
 				0F00DC741EC4944A0075FBF8 /* Info.plist */,
 			);
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAADDC11EDDE74600BF683E /* SecondViewController.swift in Sources */,
 				0F00DC6B1EC4944A0075FBF8 /* ViewController.swift in Sources */,
 				0F00DC691EC4944A0075FBF8 /* AppDelegate.swift in Sources */,
 			);
@@ -415,10 +419,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luan.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,10 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luan.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +515,7 @@
 				0F00DC8F1EC4944A0075FBF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F00DC901EC4944A0075FBF8 /* Build configuration list for PBXNativeTarget "FirstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				0F00DC921EC4944A0075FBF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F00DC931EC4944A0075FBF8 /* Build configuration list for PBXNativeTarget "FirstAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				0F00DC951EC4944A0075FBF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
